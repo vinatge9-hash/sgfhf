@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Saffron Table | Menu</title>
+  <meta name="description" content="Explore The Saffron Table menu: Appetizers, Main Courses (Vegetarian & Non-Vegetarian), Breads & Rice, Desserts, and cocktails. Fresh, bold, and refined." />
+  <style>
+    /* Font placeholders */
+    @font-face { font-family: 'Playfair Display'; src: url('/fonts/playfair-display.woff2') format('woff2'); font-weight: 400; }
+    @font-face { font-family: 'Montserrat'; src: url('/fonts/montserrat.woff2') format('woff2'); font-weight: 400; }
+    @font-face { font-family: 'Lato'; src: url('/fonts/lato.woff2') format('woff2'); font-weight: 400; }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body class="bg-white text-gray-800" style="font-family: 'Montserrat', sans-serif;">
+  <header class="w-full fixed top-0 left-0 right-0 z-50 bg-white/90 border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-xl" style="font-family: 'Playfair Display', serif;">The Saffron Table</a>
+      <nav class="hidden md:flex space-x-6 text-sm">
+        <a href="index.html" class="hover:text-slate-700">Home</a>
+        <a href="menu.html" class="hover:text-slate-700">Menu</a>
+        <a href="about.html" class="hover:text-slate-700">About</a>
+        <a href="reservations.html" class="hover:text-slate-700">Reservations</a>
+        <a href="gallery.html" class="hover:text-slate-700">Gallery</a>
+        <a href="contact.html" class="hover:text-slate-700">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-28 px-4 sm:px-6 lg:px-8">
+    <section class="max-w-6xl mx-auto">
+      <div class="flex items-center justify-between mb-6">
+        <h1 class="text-2xl font-semibold" style="font-family: 'Playfair Display', serif;">Our Menu</h1>
+        <a href="#" class="px-4 py-2 rounded border border-gray-300 text-sm">Download PDF Menu</a>
+      </div>
+      <!-- Appetizers -->
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold mb-3" style="font-family: 'Playfair Display', serif;">Appetizers</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="border rounded-lg p-4 flex">
+            <img src="https://pixabay.com/get/g869b564354623db37a69d4129be4c9421f4bcf65768152c6fe49b22afb2c54edb3b7a85c6c49a0baa2ebb654d037f6c8_640.jpg" alt="Crispy sesame cauliflower bites" class="w-24 h-24 object-cover rounded" />
+            <div class="ml-4">
+              <div class="flex items-center gap-2">
+                <span class="font-semibold" style="font-family: 'Montserrat', sans-serif;">Crispy Sesame Cauliflower Bites</span>
+                <span class="text-xs text-green-600" aria-label="V">V</span>
+                <span class="text-xs" aria-label="GF">GF</span>
+              </div>
+              <p class="text-sm text-gray-700" style="font-family: 'Lato', sans-serif;">Soy-chili glaze, sesame crunch, pickled onion</p>
+              <p class="font-semibold mt-1">₹ 320</p>
+            </div>
+          </div>
+          <div class="border rounded-lg p-4 flex">
+            <img src="https://images.pexels.com/photos/7111393/pexels-photo-7111393.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Ghee-roasted prawns with curry leaf" class="w-24 h-24 object-cover rounded" />
+            <div class="ml-4">
+              <div class="flex items-center gap-2">
+                <span class="font-semibold" style="font-family: 'Montserrat', sans-serif;">Ghee-Roasted Prawns</span>
+                <span class="text-xs text-red-600" aria-label="Spice">🔥</span>
+              </div>
+              <p class="text-sm text-gray-700" style="font-family: 'Lato', sans-serif;">Curry leaf oil, chili, and lemon zest</p>
+              <p class="font-semibold mt-1">₹ 520</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Courses (Vegetarian) -->
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold mb-3" style="font-family: 'Playfair Display', serif;">Main Courses (Vegetarian)</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="border rounded-lg p-4 flex">
+            <img src="https://images.unsplash.com/photo-1646999415436-fa7fa11cb8c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw2fHxwYW5lZXIlMjB0aWtrYSUyMHdpdGglMjBzYWZmcm9uJTIwZ2xhemV8ZW58MHwwfHx8MTc1NzA0ODEyOHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Paneer tikka with saffron glaze" class="w-24 h-24 object-cover rounded" />
+            <div class="ml-4">
+              <div class="flex items-center gap-2">
+                <span class="font-semibold" style="font-family: 'Montserrat', sans-serif;">Paneer Tikka Redolent with Saffron</span>
+                <span class="text-xs text-green-600" aria-label="GF">GF</span>
+              </div>
+              <p class="text-sm text-gray-700" style="font-family: 'Lato', sans-serif;">Charcoal-grilled paneer, saffron-honey glaze</p>
+              <p class="font-semibold mt-1">₹ 580</p>
+            </div>
+          </div>
+          <div class="border rounded-lg p-4 flex">
+            <img src="https://images.unsplash.com/photo-1630286056856-fb0fb96589a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw2fHxtdXNocm9vbSUyMGRhbCUyMHdpdGglMjBjcmVhbXxlbnwwfDB8fHwxNzU3MDQ4MTI4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Mushroom dal with cream" class="w-24 h-24 object-cover rounded" />
+            <div class="ml-4">
+              <div class="flex items-center gap-2">
+                <span class="font-semibold" style="font-family: 'Montserrat', sans-serif;">Mushroom Dal with Aromatics</span>
+                <span class="text-xs text-green-600" aria-label="GF">GF</span>
+              </div>
+              <p class="text-sm text-gray-700" style="font-family: 'Lato', sans-serif;">Creamy dal, mushroom confit, thyme oil</p>
+              <p class="font-semibold mt-1">₹ 520</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Courses (Non-Vegetarian) -->
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold mb-3" style="font-family: 'Playfair Display', serif;">Main Courses (Non-Vegetarian)</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="border rounded-lg p-4 flex">
+            <img src="https://pixabay.com/get/ge24278a121b6370f54e11a0e92cc2dbae87233883c832dabe76f6b6caf712da5b5a2306c7c9ff433bb8de9795fa271264efeee558f6c2b107266d5ed81f52b1d_640.jpg" alt="Slow-cooked lamb rogan Josh" class="w-24 h-24 object-cover rounded" />
+            <div class="ml-4">
+              <div class="flex items-center gap-2">
+                <span class="font-semibold" style="font-family: 'Montserrat', sans-serif;">Lamb Rogan Josh</span>
+                <span class="text-xs" aria-label="GF">GF</span>
+              </div>
+              <p class="text-sm text-gray-700" style="font-family: 'Lato', sans-serif;">Smoked paprika, coconut-tomato gravy</p>
+              <p class="font-semibold mt-1">₹ 860</p>
+            </div>
+          </div>
+          <div class="border rounded-lg p-4 flex">
+            <img src="https://pixabay.com/get/g0df91d5b2ca46b7e9e40d16cbc2c5e34ed22df4e4be72228d136df46e2caf49c64c96fa0f3c627cde5842a5c4cc9487d4bbbe6dcff494e08cc209592d5bbc97d_640.jpg" alt="Tandoori seabass with mint chutney" class="w-24 h-24 object-cover rounded" />
+            <div class="ml-4">
+              <div class="flex items-center gap-2">
+                <span class="font-semibold" style="font-family: 'Montserrat', sans-serif;">Tandoori Seabass</span>
+                <span class="text-xs text-green-600" aria-label="GF">GF</span>
+              </div>
+              <p class="text-sm text-gray-700" style="font-family: 'Lato', sans-serif;">Charcoal-smoked seabass with mint chutney</p>
+              <p class="font-semibold mt-1">₹ 940</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Breads & Rice -->
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold mb-3" style="font-family: 'Playfair Display', serif;">Breads & Rice</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="border rounded-lg p-4 flex">
+            <img src="https://images.pexels.com/photos/28125427/pexels-photo-28125427.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Garlic naan" class="w-24 h-24 object-cover rounded" />
+            <div class="ml-4">
+              <span class="font-semibold" style="font-family: 'Montserrat', sans-serif;">Garlic Naan</span>
+              <p class="text-sm text-gray-700" style="font-family: 'Lato', sans-serif;">Smoked ghee finish</p>
+              <p class="font-semibold mt-1">₹ 120</p>
+            </div>
+          </div>
+          <div class="border rounded-lg p-4 flex">
+            <img src="https://images.unsplash.com/photo-1745147126561-81a1487fae91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwzfHxzYWZmcm9uJTIwcHVsYW98ZW58MHwwfHx8MTc1NzA0ODEzMXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Saffron pulao" class="w-24 h-24 object-cover rounded" />
+            <div class="ml-4">
+              <span class="font-semibold" style="font-family: 'Montserrat', sans-serif;">Saffron Pulao</span>
+              <p class="text-sm text-gray-700" style="font-family: 'Lato', sans-serif;">Aromatic basmati with saffron threads</p>
+              <p class="font-semibold mt-1">₹ 260</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Desserts -->
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold mb-3" style="font-family: 'Playfair Display', serif;">Desserts</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="border rounded-lg p-4 flex">
+            <img src="https://images.pexels.com/photos/33731581/pexels-photo-33731581.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Saffron pistachio kulfi" class="w-24 h-24 object-cover rounded" />
+            <div class="ml-4">
+              <span class="font-semibold" style="font-family: 'Montserrat', sans-serif;">Saffron Pistachio Kulfi</span>
+              <p class="text-sm text-gray-700" style="font-family: 'Lato', sans-serif;">Creamy kulfi with roasted pistachio</p>
+              <p class="font-semibold mt-1">₹ 220</p>
+            </div>
+          </div>
+          <div class="border rounded-lg p-4 flex">
+            <img src="https://pixabay.com/get/gdb0913f36874a365115cd460b06695c39cea40d1370f01bbf4de792d62b3c8ae216a83d311bb55b10a6576df357c36988e46dce6696215f9dedfcba2a3bdb9ec_640.jpg" alt="Cardamom creme brulee" class="w-24 h-24 object-cover rounded" />
+            <div class="ml-4">
+              <span class="font-semibold" style="font-family: 'Montserrat', sans-serif;">Cardamom Creme Brulee</span>
+              <p class="text-sm text-gray-700" style="font-family: 'Lato', sans-serif;">Citrus zest, burnt sugar crust</p>
+              <p class="font-semibold mt-1">₹ 260</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cocktails & Beverages -->
+      <div class="mb-12">
+        <h2 class="text-xl font-semibold mb-3" style="font-family: 'Playfair Display', serif;">Cocktails & Beverages</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="border rounded-lg p-4 flex">
+            <img src="https://images.unsplash.com/photo-1564057779901-11451bfca03b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw1fHxzYWZmcm9uJTIwc3BpY2UlMjBvbGQlMjBmYXNoaW9uZWR8ZW58MHwwfHx8MTc1NzA0ODEzM3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="Saffron spice old fashioned" class="w-24 h-24 object-cover rounded" />
+            <div class="ml-4">
+              <span class="font-semibold" style="font-family: 'Montserrat', sans-serif;">Saffron Spice Old Fashioned</span>
+              <p class="text-sm text-gray-700" style="font-family: 'Lato', sans-serif;">Smoked cinnamon, saffron, and orange bitters</p>
+              <p class="font-semibold mt-1">₹ 480</p>
+            </div>
+          </div>
+          <div class="border rounded-lg p-4 flex">
+            <img src="https://images.unsplash.com/photo-1652583055028-321a87a71855?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwzfHxtYXNhbGElMjBjaGFpJTIwbW9ja3RhaWx8ZW58MHwwfHx8MTc1NzA0ODEzNHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Masala chai mocktail" class="w-24 h-24 object-cover rounded" />
+            <div class="ml-4">
+              <span class="font-semibold" style="font-family: 'Montserrat', sans-serif;">Masala Chai Mocktail</span>
+              <p class="text-sm text-gray-700" style="font-family: 'Lato', sans-serif;">Cardamom, cinnamon, and vanilla</p>
+              <p class="font-semibold mt-1"> ₹ 320</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-stone-800 text-gray-300 py-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 sm:px-6 lg:px-8">
+      <section>
+        <h4 class="text-xl" style="font-family: 'Playfair Display', serif;">The Saffron Table</h4>
+        <p class="text-sm" style="font-family: 'Lato', sans-serif; color:#d9d4c1;">Elegant, intimate dining in Jubilee Hills, Hyderabad.</p>
+      </section>
+      <section>
+        <h5 class="font-semibold" style="font-family: 'Playfair Display', serif;">Quick Links</h5>
+        <ul class="space-y-2 text-sm" style="font-family: 'Lato', sans-serif;">
+          <li><a href="/menu.html" class="hover:text-white">Menu</a></li>
+          <li><a href="/about.html" class="hover:text-white">About</a></li>
+          <li><a href="/reservations.html" class="hover:text-white">Reservations</a></li>
+          <li><a href="/gallery.html" class="hover:text-white">Gallery</a></li>
+          <li><a href="/contact.html" class="hover:text-white">Contact</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5 class="font-semibold" style="font-family: 'Playfair Display', serif;">Newsletter</h5>
+        <form class="flex mt-2" action="#" method="post">
+          <input class="w-full px-3 py-2 rounded-l-md" placeholder="Email" aria-label="Email" />
+          <button class="px-4 py-2 rounded-r-md bg-yellow-400 text-black" type="submit">Subscribe</button>
+        </form>
+      </section>
+    </div>
+    <hr class="border-gray-700 mt-6" />
+    <p class="text-center text-xs mt-2" style="font-family: 'Lato', sans-serif;">© 2025 The Saffron Table. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    // Simple mobile menu toggle (if needed on this page)
+  </script>
+</body>
+</html>
