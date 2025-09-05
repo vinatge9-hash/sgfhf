@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Saffron Table | Contact</title>
+  <meta name="description" content="Get in touch with The Saffron Table in Jubilee Hills, Hyderabad. Find address, hours, social links, and a map to the restaurant." />
+  <style>
+    @font-face { font-family: 'Playfair Display'; src: url('/fonts/playfair-display.woff2') format('woff2'); font-weight: 400; }
+    @font-face { font-family: 'Lato'; src: url('/fonts/lato.woff2') format('woff2'); font-weight: 400; }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800" style="font-family: 'Lato', sans-serif;">
+  <header class="w-full fixed top-0 left-0 right-0 z-50 bg-white/90 border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-xl" style="font-family: 'Playfair Display', serif;">The Saffron Table</a>
+      <nav class="hidden md:flex space-x-6 text-sm">
+        <a href="index.html" class="hover:text-slate-700">Home</a>
+        <a href="menu.html" class="hover:text-slate-700">Menu</a>
+        <a href="about.html" class="hover:text-slate-700">About</a>
+        <a href="reservations.html" class="hover:text-slate-700">Reservations</a>
+        <a href="gallery.html" class="hover:text-slate-700">Gallery</a>
+        <a href="contact.html" class="hover:text-slate-700">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="pt-28 px-4 sm:px-6 lg:px-8">
+    <section class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      <!-- Left: Contact Info -->
+      <div>
+        <h2 class="text-2xl font-semibold" style="font-family: 'Playfair Display', serif;">Contact Us</h2>
+        <p class="mt-2" style="color:#555;">We’d love to hear from you. Reach us for reservations, events, or feedback.</p>
+        <ul class="mt-4 space-y-2 text-sm" style="font-family: 'Lato', sans-serif; color:#555;">
+          <li><strong>Address:</strong> 123 Spice Lane, Jubilee Hills, Hyderabad, Telangana 500033</li>
+          <li><strong>Phone:</strong> <a href="tel:+9181XXXXXXXX" class="text-black">+91-81XXXXXXXX</a></li>
+          <li><strong>Email:</strong> <a href="mailto:reservations@thesaffrontable.com" class="text-black">reservations@thesaffrontable.com</a></li>
+          <li><strong>Hours:</strong> Mon-Sun: 12:00 PM – 11:00 PM</li>
+        </ul>
+        <div class="flex space-x-3 mt-4" aria-label="Socials">
+          <!-- Instagram Icon -->
+          <a href="#" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 hover:text-black" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5m0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7m5 5a5 5 0 110 10 5 5 0 010-10m0 2a3 3 0 100 6 3 3 0 000-6z"/>
+            </svg>
+          </a>
+          <!-- Facebook Icon -->
+          <a href="#" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 hover:text-black" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.5 9.95V14.9H7.5v-2.9h3V9.5c0-3 1.79-4.66 4.52-4.66 1.31 0 2.68.23 2.68.23v3h-1.51c-1.49 0-1.95.93-1.95 1.89v2.26h3.31l-.53 2.9h-2.78v7.05A10 10 0 0022 12z"/></svg>
+          </a>
+          <!-- Twitter Icon -->
+          <a href="#" aria-label="X (Twitter)">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 hover:text-black" viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.92c-.77.34-1.6.57-2.46.68a4.27 4.27 0 001.88-2.35 8.53 8.53 0 01-2.7 1.03 4.24 4.24 0 00-7.23 3.86A12.04 12.04 0 013 4.9a4.25 4.25 0 001.31 5.66 4.2 4.2 0 01-1.92-.53v.05a4.25 4.25 0 003.4 4.17 4.28 4.28 0 01-1.91.07 4.25 4.25 0 003.97 2.95A8.51 8.51 0 012 19.54 12.03 12.03 0 008.29 21c7.55 0 11.68-6.26 11.68-11.69 0-.18-.01-.36-.02-.54A8.32 8.32 0 0022 5.92z"/></svg>
+          </a>
+        </div>
+      </section>
+      <section>
+        <h4 class="text-xl" style="font-family: 'Playfair Display', serif;">Visit Us</h4>
+        <div id="map" class="w-full h-48 bg-gray-100 rounded-lg mt-2" aria-label="Map placeholder">
+          <iframe src="https://maps.google.com/maps?q=123%20Spice%20Lane%2C%20Jubilee%20Hills%2C%20Hyderabad%2C%20Telangana%20500033&output=embed" class="w-full h-full rounded-lg" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
