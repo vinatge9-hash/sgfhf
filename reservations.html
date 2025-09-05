@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Saffron Table | Reservations</title>
+  <meta name="description" content="Make a reservation at The Saffron Table in Jubilee Hills, Hyderabad. Manage bookings, party sizes, and special requests with ease." />
+  <style>
+    @font-face { font-family: 'Playfair Display'; src: url('/fonts/playfair-display.woff2') format('woff2'); font-weight: 400; }
+    @font-face { font-family: 'Lato'; src: url('/fonts/lato.woff2') format('woff2'); font-weight: 400; }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800" style="font-family: 'Lato', sans-serif;">
+  <header class="w-full fixed top-0 left-0 right-0 z-50 bg-white/90 border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-xl" style="font-family: 'Playfair Display', serif;">The Saffron Table</a>
+      <nav class="hidden md:flex space-x-6 text-sm">
+        <a href="index.html" class="hover:text-slate-700">Home</a>
+        <a href="menu.html" class="hover:text-slate-700">Menu</a>
+        <a href="about.html" class="hover:text-slate-700">About</a>
+        <a href="reservations.html" class="hover:text-slate-700">Reservations</a>
+        <a href="gallery.html" class="hover:text-slate-700">Gallery</a>
+        <a href="contact.html" class="hover:text-slate-700">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="pt-28 px-4 sm:px-6 lg:px-8">
+    <section class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-6" aria-label="Reservation Widget">
+      <h2 class="text-2xl font-semibold mb-4" style="font-family: 'Playfair Display', serif;">Book Your Table</h2>
+      <form class="grid md:grid-cols-2 gap-4" action="#" method="post">
+        <div>
+          <label class="block text-sm mb-1">Name</label>
+          <input class="w-full border rounded px-3 py-2" placeholder="Full name" />
+        </div>
+        <div>
+          <label class="block text-sm mb-1">Phone</label>
+          <input class="w-full border rounded px-3 py-2" placeholder="Phone number" />
+        </div>
+        <div>
+          <label class="block text-sm mb-1">Email</label>
+          <input class="w-full border rounded px-3 py-2" placeholder="Email" />
+        </div>
+        <div>
+          <label class="block text-sm mb-1">Number of Guests</label>
+          <input class="w-full border rounded px-3 py-2" type="number" min="1" max="20" placeholder="e.g., 2" />
+        </div>
+        <div>
+          <label class="block text-sm mb-1">Date</label>
+          <input class="w-full border rounded px-3 py-2" type="date" />
+        </div>
+        <div>
+          <label class="block text-sm mb-1">Time</label>
+          <input class="w-full border rounded px-3 py-2" type="time" />
+        </div>
+      </form>
+      <p class="text-sm text-gray-700 mt-3">For parties larger than 6, please call us directly at +91-XXXXXXXXXX.</p>
+      <p class="text-sm mt-2">Open daily 12:00 PM - 11:00 PM</p>
+    </section>
+  </main>
+  <footer class="bg-stone-800 text-gray-300 py-6 mt-8">
+    <p class="text-center text-xs">&copy; 2025 The Saffron Table. All rights reserved.</p>
+  </footer>
+</body>
+</html>
