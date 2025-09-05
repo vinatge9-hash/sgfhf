@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Saffron Table | Modern Indian Fusion in Hyderabad</title>
+  <meta name="description" content="Experience The Saffron Table in Jubilee Hills, Hyderabad — a modern Indian fusion restaurant with farm-to-table ingredients, artisanal cocktails, and live music." />
+  <!-- Font placeholders (load all fonts) -->
+  <style>
+    /* Font placeholders. In production, replace with actual font-face declarations or link tags. */
+    /* Font: Playfair Display (serif) */
+    @font-face { font-family: 'Playfair Display'; src: url('/fonts/playfair-display.woff2') format('woff2'); font-weight: 400; font-style: normal; }
+    /* Font: Montserrat (sans) */
+    @font-face { font-family: 'Montserrat'; src: url('/fonts/montserrat.woff2') format('woff2'); font-weight: 400; font-style: normal; }
+    /* Font: Lato (sans) */
+    @font-face { font-family: 'Lato'; src: url('/fonts/lato.woff2') format('woff2'); font-weight: 400; font-style: normal; }
+  </style>
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Swiper for testimonials carousel -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <style>
+    /* Page load fade-in */
+    body {
+      opacity: 0;
+      transition: opacity 600ms ease-in-out;
+    }
+    body.loaded {
+      opacity: 1;
+    }
+    /* Simple on-scroll fade-in for sections */
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 600ms ease, transform 600ms ease;
+    }
+    [data-animate].visible {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800" onload="document.body.classList.add('loaded')" >
+  <!-- Header / Navbar -->
+  <header class="w-full fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-filter backdrop-blur-lg border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center space-x-2">
+        <!-- Logo (text-based for placeholder) -->
+        <span class="text-2xl font-semibold" style="font-family: 'Playfair Display', serif;">The Saffron Table</span>
+      </a>
+      <nav aria-label="Main navigation" class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-slate-700">Home</a>
+        <a href="menu.html" class="hover:text-slate-700">Menu</a>
+        <a href="about.html" class="hover:text-slate-700">About Us</a>
+        <a href="reservations.html" class="hover:text-slate-700">Reservations</a>
+        <a href="gallery.html" class="hover:text-slate-700">Gallery</a>
+        <a href="contact.html" class="hover:text-slate-700">Contact</a>
+        <a href="#" class="ml-2 px-3 py-2 rounded-full bg-yellow-400 text-black hover:bg-yellow-500" aria-label="Order Online">Order Online</a>
+      </nav>
+      <!-- Mobile menu button -->
+      <button class="md:hidden text-gray-700" aria-label="Open menu" id="mobileMenuBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200">
+      <a href="index.html" class="block px-4 py-2">Home</a>
+      <a href="menu.html" class="block px-4 py-2">Menu</a>
+      <a href="about.html" class="block px-4 py-2">About Us</a>
+      <a href="reservations.html" class="block px-4 py-2">Reservations</a>
+      <a href="gallery.html" class="block px-4 py-2">Gallery</a>
+      <a href="contact.html" class="block px-4 py-2">Contact</a>
+      <a href="#" class="block px-4 py-2">Order Online</a>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full" aria-label="Hero">
+      <div class="absolute inset-0" style="background-image: url('https://pixabay.com/get/g3507abd6c450e7296a0864bb9ea9497a31aca5aa26022d552afb650cdb0bf0e8ef32cf8a89cd6ef9ea57f7ea5cbe625e23e6486a427abac43004943e4524b84d_640.jpg'); background-size: cover; background-position: center;"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"></div>
+      <div class="relative z-10 flex items-center justify-center h-full px-4">
+        <div class="text-center max-w-2xl mx-auto text-white" data-animate>
+          <h1 class="text-4xl md:text-6xl font-bold mb-4" style="font-family: 'Playfair Display', serif;">
+            Experience the Soul of Modern India.
+          </h1>
+          <p class="text-lg md:text-xl mb-6" style="font-family: 'Lato', sans-serif;">
+            An unforgettable culinary journey where tradition meets innovation at The Saffron Table.
+          </p>
+          <div class="flex items-center justify-center gap-4">
+            <a href="reservations.html" class="px-6 py-3 rounded-full bg-yellow-400 text-black font-semibold hover:bg-yellow-500 transition">Book a Table</a>
+            <a href="menu.html" class="px-6 py-3 rounded-full border-2 border-white text-white hover:bg-white/20 transition" style="font-family: 'Montserrat', sans-serif;">View Menu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8" data-animate>
+      <div class="max-w-5xl mx-auto text-center">
+        <p class="text-lg" style="font-family: 'Lato', sans-serif;">
+          At The Saffron Table, we blend farm-to-table ethos with bold Indian flavors, presenting traditional essence through contemporary techniques. From the first bite to the final note of live music, our dining room is designed to feel intimate, inviting, and unforgettable.
+        </p>
+      </div>
+    </section>
+
+    <!-- USP Highlights -->
+    <section class="py-8 bg-gray-50" aria-label="USPs">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-6" >
+          <!-- Local Ingredients -->
+          <div class="bg-white rounded-xl p-6 shadow-lg flex flex-col items-center text-center" data-animate>
+            <span class="mb-3" aria-label="Local ingredients">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-600" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.09 4.23L18 9l-3.5 3.4L15 17l-3-1.8L9 17l-.5-4.8L5 9l3.91-1.77L12 3z"/></svg>
+            </span>
+            <h3 class="font-semibold" style="font-family: 'Playfair Display', serif;">Local Ingredients</h3>
+            <p class="text-sm" style="font-family: 'Lato', sans-serif;">Farm-to-table sourcing from GREEN Hyderabad farms ensures peak freshness and sustainable seasonality.</p>
+          </div>
+          <!-- Artisanal Cocktails -->
+          <div class="bg-white rounded-xl p-6 shadow-lg flex flex-col items-center text-center" data-animate>
+            <span class="mb-3" aria-label="Artisanal cocktails">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><path d="M7 6h10v2H7V6zm0 4h8v2H7v-2zm-2 6h12v2H5v-2z"/></svg>
+            </span>
+            <h3 class="font-semibold" style="font-family: 'Playfair Display', serif;">Artisanal Cocktails</h3>
+            <p class="text-sm" style="font-family: 'Lato', sans-serif;">A modern Indian cocktail program crafted with spices and herbs by a renowned mixologist.</p>
+          </div>
+          <!-- Live Music -->
+          <div class="bg-white rounded-xl p-6 shadow-lg flex flex-col items-center text-center" data-animate>
+            <span class="mb-3" aria-label="Live music">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-500" viewBox="0 0 24 24" fill="currentColor"><path d="M4 12l4-3 4 3 4-3 4 3V20H4z"/></svg>
+            </span>
+            <h3 class="font-semibold" style="font-family: 'Playfair Display', serif;">Live Music</h3>
+            <p class="text-sm" style="font-family: 'Lato', sans-serif;">Weekend evenings feature intimate instrumental performances enhancing the dining experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8" aria-label="Featured Dishes" data-animate>
+      <div class="text-center mb-6">
+        <h2 class="text-2xl font-semibold" style="font-family: 'Playfair Display', serif;">Signature Dishes</h2>
+        <p class="text-sm" style="font-family: 'Lato', sans-serif; color:#555;">Three to four chef-curated plates that embody our fusion of tradition and innovation.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Dish 1 -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden" data-animate>
+          <img src="https://images.pexels.com/photos/8697541/pexels-photo-8697541.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Slow-cooked Malabar chicken in coconut-fennel gravy" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="font-semibold" style="font-family: 'Playfair Display', serif;">Slow-cooked Malabar Chicken</h3>
+            <p class="text-sm text-gray-700" style="font-family: 'Lato', sans-serif;">Pearl onions in a coconut-fennel gravy with a kiss of saffron.</p>
+            <p class="mt-2 font-semibold" aria-label="price">₹ 620</p>
+          </div>
+        </article>
+        <!-- Dish 2 -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden" data-animate>
+          <img src="https://pixabay.com/get/ga30fe8e3a5343c2a366f03e95e5bac4a4c108d6dcd3f95c46acd9a28644cc4313ceb83ff68452dbc5e076007659dcb0f4be6fb6c6efdf6176415371e825cc34a_640.jpg" alt="Seared sea bass with saffron beurre" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="font-semibold" style="font-family: 'Playfair Display', serif;">Sea Bass with Saffron Beurre</h3>
+            <p class="text-sm text-gray-700" style="font-family: 'Lato', sans-serif;">Herb-crusted fillet finished with a fragrant saffron beurre blanc.</p>
+            <p class="mt-2 font-semibold" aria-label="price">₹ 780</p>
+          </div>
+        </article>
+        <!-- Dish 3 -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden" data-animate>
+          <img src="https://images.pexels.com/photos/33759041/pexels-photo-33759041.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Mushroom truffle pulao with saffron" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="font-semibold" style="font-family: 'Playfair Display', serif;">Mushroom Truffle Pulao</h3>
+            <p class="text-sm text-gray-700" style="font-family: 'Lato', sans-serif;">Aromatic mushrooms, aged basmati, and a kiss of truffle oil.</p>
+            <p class="mt-2 font-semibold" aria-label="price">₹ 560</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Customer Testimonials (Swiper) -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8" aria-label="Testimonials" data-animate>
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-2xl font-semibold text-center mb-6" style="font-family: 'Playfair Display', serif;">What guests are saying</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide p-4 bg-white rounded-xl shadow-lg" aria-label="Testimonial 1">
+              <p class="text-lg" style="font-family: 'Lato', sans-serif;">"An unforgettable dining experience — refined, warm, and delightfully inventive."</p>
+              <p class="mt-2 text-sm text-gray-600">- Food Critic, The Hyderabad Ledger</p>
+            </div>
+            <div class="swiper-slide p-4 bg-white rounded-xl shadow-lg" aria-label="Testimonial 2">
+              <p class="text-lg" style="font-family: 'Lato', sans-serif;">"The cocktails are a revelation, perfectly balancing spice and aroma."</p>
+              <p class="mt-2 text-sm text-gray-600">- Priya N., Gurgaon Foodie</p>
+            </div>
+            <div class="swiper-slide p-4 bg-white rounded-xl shadow-lg" aria-label="Testimonial 3">
+              <p class="text-lg" style="font-family: 'Lato', sans-serif;">"Intimate ambiance and flawless service — a new benchmark for fusion dining."</p>
+              <p class="mt-2 text-sm text-gray-600">- Chef’s Table guest</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ambiance Glimpse (Parallax) -->
+    <section class="w-full h-80 md:h-96 bg-fixed bg-center" style="background-image: url('https://images.pexels.com/photos/2290753/pexels-photo-2290753.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'); background-size: cover;" aria-label="Ambiance"></section>
+
+    <!-- Final CTA -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8 bg-stone-50" data-animate>
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-2xl font-semibold" style="font-family: 'Playfair Display', serif;">Reserve your table or join our newsletter</h2>
+        <p class="mt-2 text-sm" style="font-family: 'Lato', sans-serif; color:#555;">Be the first to know about chef’s tasting menus and weekend live music.</p>
+        <div class="mt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="reservations.html" class="px-6 py-3 rounded-full bg-yellow-400 text-black font-semibold hover:bg-yellow-500 transition">Book a Table</a>
+          <form action="#" method="get" class="flex items-center">
+            <input type="email" name="email" placeholder="Enter your email" aria-label="Email" class="px-4 py-2 rounded-l-md border border-gray-300" />
+            <button class="px-4 py-2 rounded-r-md bg-amber-600 text-white hover:bg-amber-700 transition" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-stone-800 text-gray-300 mt-8 pt-8 pb-6">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Column 1: Brand & Socials -->
+      <section class="space-y-3">
+        <h4 class="text-xl" style="font-family: 'Playfair Display', serif;">The Saffron Table</h4>
+        <p class="text-sm" style="font-family: 'Lato', sans-serif; color:#d1c4a9;">Farm-to-table modern Indian fusion with intimate ambiance and live weekend vibes.</p>
+        <div class="flex space-x-3" aria-label="Social media">
+          <!-- Instagram -->
+          <a href="#" aria-label="Instagram" class="hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-300" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5m0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7m5 5a5 5 0 110 10 5 5 0 010-10m0 2a3 3 0 100 6 3 3 0 000-6z"/></svg>
+          </a>
+          <!-- Facebook -->
+          <a href="#" aria-label="Facebook" class="hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-300" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.5 9.95v-7.04H8.9V12h1.6V9.8c0-1.58.94-2.45 2.38-2.45.87 0 1.78.15 1.78.15v2h-1c-1 0-1.31.62-1.31 1.25V12h2.23l-.36 2.91h-1.87v7.04A10 10 0 0022 12z"/></svg>
+          </a>
+          <!-- Twitter / X -->
+          <a href="#" aria-label="X" class="hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-300" viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.92c-.77.34-1.6.57-2.46.68a4.27 4.27 0 001.88-2.35 8.53 8.53 0 01-2.7 1.03 4.24 4.24 0 00-7.23 3.86A12.04 12.04 0 013 4.9a4.25 4.25 0 001.31 5.66 4.2 4.2 0 01-1.92-.53v.05a4.25 4.25 0 003.4 4.17 4.28 4.28 0 01-1.91.07 4.25 4.25 0 003.97 2.95A8.51 8.51 0 012 19.54 12.03 12.03 0 008.29 21c7.55 0 11.68-6.26 11.68-11.69 0-.18-.01-.36-.02-.54A8.32 8.32 0 0022 5.92z"/></svg>
+          </a>
+        </div>
+      </section>
+      <!-- Column 2: Quick Links -->
+      <section aria-label="Quick Links">
+        <h5 class="text-lg" style="font-family: 'Playfair Display', serif;">Quick Links</h5>
+        <ul class="space-y-2 text-sm" style="font-family: 'Lato', sans-serif;">
+          <li><a href="menu.html" class="hover:text-white">Menu</a></li>
+          <li><a href="about.html" class="hover:text-white">About Us</a></li>
+          <li><a href="reservations.html" class="hover:text-white">Reservations</a></li>
+          <li><a href="gallery.html" class="hover:text-white">Gallery</a></li>
+          <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+        </ul>
+      </section>
+      <!-- Column 3: Newsletter -->
+      <section aria-label="Newsletter" class="md:ml-0">
+        <h5 class="text-lg" style="font-family: 'Playfair Display', serif;">Newsletter</h5>
+        <p class="text-sm" style="font-family: 'Lato', sans-serif;">Get tasting menus and weekend specials sent to your inbox.</p>
+        <form class="mt-2 flex" action="#" method="post">
+          <input aria-label="Email" placeholder="Email address" class="w-full px-3 py-2 rounded-l-md bg-white text-black border border-gray-300" />
+          <button class="px-4 py-2 rounded-r-md bg-yellow-400 hover:bg-yellow-500 text-black font-semibold" type="submit">Subscribe</button>
+        </form>
+      </section>
+    </div>
+    <hr class="border-gray-700 mt-4" />
+    <p class="text-center text-xs py-2" style="font-family: 'Lato', sans-serif;">© 2025 The Saffron Table. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobileMenuBtn');
+    const menu = document.getElementById('mobileMenu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+
+    // Simple on-scroll reveal
+    const revealEls = document.querySelectorAll('[data-animate]');
+    const onScroll = () => {
+      revealEls.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+          el.removeAttribute('data-animate');
+        }
+      });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Initialize Swiper
+    new Swiper('.mySwiper', {
+      loop: true,
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      autoplay: { delay: 5000 },
+    });
+  </script>
+</body>
+</html>
